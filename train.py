@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 
-df = pd.read_csv("data/winequality-red.csv")
+df = pd.read_csv("data/winequality-red.csv", sep=";")
 
 X = df.drop("quality", axis=1)
 y = df["quality"]
